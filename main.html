@@ -2,7 +2,85 @@
   <head>
     <title>Facebook Login</title>
   </head>
+	 <style>
+        body {
+            background-color: #f6f6f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+        }
+        .left {
+            width: 450px;
+            margin-top: 70px;
+            display: inline-block;
+        }
+        .right {
+            display: inline-block;
+        }
+        .right form {
+            display: flex;
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ccc;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .right form input {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .right form button {
+            background-color: #1877f2;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 100%;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .right form a {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+        }
+        .signup {
+            background-color: #42b72a;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 100%;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+        }
+    </style>
   <body>
     <!-- Write your code here -->
+	 <div class="container">
+    <div class="left">
+        <img src="https://logos-world.net/wp-content/uploads/2020/05/Facebook-Logo.png" alt="Facebook logo" style="width: 300px;">
+        <p>Facebook helps you connect and share with the people in your life.</p>
+    </div>
+    <div class="right">
+        <form>
+            <input type="text" id="email" placeholder="Email address or phone number">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Log in</button>
+            <a href="#">Forgotten account?</a>
+        </form>
+        <button class="signup">Create new account</button>
+    </div>
+</div>
   </body>
 </html>
